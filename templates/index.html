@@ -1,0 +1,120 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans+Arabic:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Sedan:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/all.css' %}" />
+    <title>BIA</title>
+  </head>
+
+  <body>
+    <div class="home">
+      <div class="home-overlay">
+        <div class="home-header">
+          <img src="{% static 'images/SVU1.png' %}" />
+          <ul class="list">
+            <li><a href="#guid" class="a1">دليل الاستخدام</a></li>
+            <li>
+              <a href="{% url 'form' %}" class="a2">واجهة الاستخدام</a>
+            </li>
+            <li><a href="#" class="a2">الصفحة الرئيسية</a></li>
+          </ul>
+        </div>
+        <!-- /home-header -->
+        <div class="home-parent">
+          <div class="home-table">
+            <h2 class="table-h2">بإشراف الدكتور:عصام سلمان</h2>
+            <h3 class="table-h3">:تنفيذ الطلاب</h3>
+            <table>
+              <tr>
+                <th>الصف</th>
+                <th>id</th>
+                <th>الاسم</th>
+              </tr>
+              <tr>
+                <td>C3</td>
+                <td>ammar_162154</td>
+                <td>عمار حسن</td>
+              </tr>
+              <tr>
+                <td>C2</td>
+                <td>sidra_152804</td>
+                <td>سدرة الحلبي</td>
+              </tr>
+              <tr>
+                <td>C3</td>
+                <td>rawad_156781</td>
+                <td>رواد الطري</td>
+              </tr>
+              <tr>
+                <td>C3</td>
+                <td>tarek_153723</td>
+                <td>طارق ابراهيم</td>
+              </tr>
+              <tr>
+                <td>C1</td>
+                <td>shefaa_155813</td>
+                <td>شفاء تكله</td>
+              </tr>
+            </table>
+          </div>
+          <!-- /home-table -->
+          <div class="home-title">
+            <h1 class="home-h1">مشروع تحسين خدمات النقل</h1>
+            <h3 class="home-h4">الجامعة الافتراضية السورية</h3>
+            <h3 class="home-h4"><bdi>BIA_601</bdi> الخوارزميات الذكية</h3>
+          </div>
+          <!--/home-title -->
+        </div>
+        <!-- /home-parent -->
+      </div>
+      <!--/home-overlay  -->
+    </div>
+    <!--/home  -->
+    <!-- ------------------------------------------------------------------------------------- -->
+    <div class="home-system">
+      <div class="home-content-system">
+        <h2 class="h2-content-system">ماذا يقدم النظام</h2>
+        <div class="span"></div>
+        <p class="p-content-system">
+          يقوم النظام بتحسين جودة خدمات النقل باستخدام الخوارزميات الذكية التي
+          تساهم في تطوير خدمة نقل البضائع من خلال تخفيض كلفة وزمن توزيع البضائع
+          على العملاء المختلفين ويتم ذلك عن طريق
+        </p>
+        <div class="p1-content-system">
+          <p class="p1-content">
+            توزيع البضائع على الشاحنات المختلفة بحيث يحقق أعلى قيمة ممكنة ضمن
+            الشاحنة
+          </p>
+        </div>
+        <div class="p1-content-system">
+          <p class="p1-content">
+            يقوم بوضع خطة التوصيل لكل شاحنة بحيث تحقق المسار الأقصر مما يضمن
+            سرعة في التوصيل
+          </p>
+        </div>
+      </div>
+      <div class="img-system" id="guid"></div>
+      <div class="h4">
+        <h4>دليل الاستخدام</h4>
+        <p style="">
+          اولا اذهب الى واجهة الاستخدام <br />ثانيا قم بإخال عدد العناوين ومن
+          اجل كل عنوان ادخل اسمه ان اردت ثم ادخل الزمن بينه وبين العناوين الأخرى
+          ثم ادخل عدد الصناديق ومن اجل كل صندوق ادخل اسمه ووزنه وقيمته والعنوان
+          الذي سيذهب له ثم قم بادخال عدد الشاحنات ومن أجل كل شاجنة أدخل سعتها
+          واسمها <br />ثم اطلب النتائج
+        </p>
+      </div>
+    </div>
+    <!-- /home-system -->
+    <!-- --------------------------------------------------------------- -->
+  </body>
+</html>
